@@ -7,6 +7,7 @@
 -- - Can be executed on active database
 -- - Can be executed in small batches
 -- - Can be executed on huge tables (tested with >250GB)
+-- - Downside: it's not super fast.
 --
 -- How to/before executing. Set values to:
 -- @daystokeep - days to keep. Default value - 365 days.
