@@ -1,6 +1,6 @@
 --
 -- Cleanups audit log BPAAuditEvents, by writing NULLs into oldXML and newXML columns. 
--- Tested with BluePrism 6.*
+-- Tested with BluePrism 6.*, but use on your own risk, make backups.
 -- 
 -- Main difference from cleanup script, provided by BluePrism, is this:
 -- - Does not lock out table (if updating >5000 rows)
@@ -14,7 +14,7 @@
 -- @maxloops - how many update loops to perform
 -- @rowcount - how many recors to update in one loop
 --
--- To calculate ammount of rows will be updated, multiplicate maxloops with row count (e.g. 100 * 100 = 10K rows will be updated)
+-- To calculate ammount of rows will be updated, multiplicate @maxloops with @rowcount (e.g. 100 * 100 = 10K rows will be updated)
 -- 
 --
 -- IMPORTANT! Set how many days of process edit history to keep.
