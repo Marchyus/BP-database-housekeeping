@@ -2,7 +2,7 @@
 -- Cleanups session logs, older than defined day
 -- Tested with BluePrism 5.* and 6.*, but use on your own risk, make backups.
 -- Session tables are [BPASessionLog_NonUnicode] and [BPASessionLog_Unicode]. 
--- BP 6.6+ may have tables [BPASessionLog_Unicode_pre65] or [BPASessionLog_NonUnicode_pre65], but these could be trimmed (usually)
+-- BP 6.6+ may have tables [BPASessionLog_Unicode_pre65] or [BPASessionLog_NonUnicode_pre65], but these could be truncated (usually)
 -- 
 -- 
 -- Main difference from cleanup script, provided by BluePrism, is this:
